@@ -15,6 +15,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private Button button;
+    private Button button4;
+    private Button button5;
 
 
     @Override
@@ -25,6 +27,13 @@ public class MainActivity extends AppCompatActivity {
 
         button = (Button) findViewById(R.id.button);
         button.setOnClickListener(btn_listner);
+
+        button4 = (Button) findViewById(R.id.button4);
+        button4.setOnClickListener(btn_listner);
+
+
+        button5 = (Button) findViewById(R.id.button5);
+        button5.setOnClickListener(btn_listner);
 
 
 
@@ -38,6 +47,18 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.button: {
                     Intent it = new Intent();
                     it.setClass(MainActivity.this, Main2Activity.class);
+                    startActivity(it);
+                    break;
+                }
+                case R.id.button4: {
+                    Intent it = new Intent();
+                    it.setClass(MainActivity.this, Main3Activity.class);
+                    startActivity(it);
+                    break;
+                }
+                case R.id.button5: {
+                    Intent it = new Intent();
+                    it.setClass(MainActivity.this, Main4Activity.class);
                     startActivity(it);
                     break;
                 }

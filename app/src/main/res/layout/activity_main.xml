@@ -21,17 +21,21 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
         android:layout_weight="1"
-        tools:srcCompat="@tools:sample/avatars[0]" />
+        app:srcCompat="@drawable/lakers"
+        tools:srcCompat="@drawable/lakers" />
 
-        <TextView
+    <TextView
         android:id="@+id/textView"
         android:layout_width="166dp"
         android:layout_height="69dp"
         android:text="輔大資管"
         android:textSize="40dp"
+        android:layout_marginLeft="30dp"
             android:layout_weight="1"
             android:layout_gravity="center" />
 
@@ -137,14 +141,15 @@
             android:layout_weight="1"
             android:layout_gravity="center"
             app:srcCompat="@mipmap/ic_launcher" />
+
     <Button
         android:id="@+id/button5"
         android:layout_width="310dp"
         android:layout_height="84dp"
-        android:text="權限轉移"
-        android:textSize="30dp"
+        android:layout_gravity="center"
         android:layout_weight="1"
-        android:layout_gravity="center" />
+        android:text="權限轉移"
+        android:textSize="30dp" />
 
 </LinearLayout>
 
